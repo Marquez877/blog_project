@@ -1,0 +1,35 @@
+[tool.ruff]
+line-length = 100
+fix = true
+
+exclude = [
+    ".git",
+    "__pycache__",
+    "migrations",
+    ".venv",
+    "venv",
+    "views_*.py",
+    "emergency_*.py",
+    "ultra_*.py",
+    "test_*.py",
+    "auth_debug*.py",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+]
+
+ignore = [
+    "E501",  # line too long
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint.isort]
+known-first-party = ["blog", "blog_project"]
