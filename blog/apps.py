@@ -6,4 +6,4 @@ class BlogConfig(AppConfig):
     name = 'blog'
 
     def ready(self):
-        import blog.signals  # подключение сигналов для автоматического создания профиля
+        pass  # подключение сигналов для автоматического создания профиля
